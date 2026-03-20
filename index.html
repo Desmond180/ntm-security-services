@@ -13,24 +13,29 @@ body {
   color:white;
 }
 
+/* NAV */
+nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  background:#020617;
+}
+
+nav img {
+  height:50px;
+}
+
 /* HERO */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
-  url('https://images.unsplash.com/photo-1581093458791-9f3c3900df9b');
-  background-size: cover;
-  background-position: center;
   text-align:center;
-  padding:100px 20px;
+  padding:80px 20px;
+  background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9));
 }
 
 .hero h1 {
-  font-size:40px;
+  font-size:38px;
   color:#00c2ff;
-}
-
-.hero p {
-  font-size:18px;
-  margin:20px 0;
 }
 
 .btn {
@@ -67,9 +72,27 @@ h2 {
   width:250px;
 }
 
-/* CONTACT */
-.contact p {
-  margin:5px;
+/* FORM */
+form {
+  max-width:400px;
+  margin:auto;
+}
+
+input, textarea {
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:none;
+  border-radius:5px;
+}
+
+button {
+  background:#00c2ff;
+  padding:12px;
+  border:none;
+  width:100%;
+  font-weight:bold;
+  cursor:pointer;
 }
 
 /* FOOTER */
@@ -79,16 +102,14 @@ footer {
   text-align:center;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 .whatsapp {
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25D366;
-  color:white;
   padding:15px;
   border-radius:50%;
-  font-size:20px;
   text-decoration:none;
 }
 </style>
@@ -97,20 +118,22 @@ footer {
 
 <body>
 
+<!-- NAV -->
+<nav>
+  <img src="logo.png" alt="NTM Security Logo">
+  <h3>NTM Security Services</h3>
+</nav>
+
 <!-- HERO -->
 <div class="hero">
-  <h1>NTM SECURITY SERVICES</h1>
-  <p>Your Safety Comes First</p>
+  <h1>Your Safety Comes First</h1>
   <a href="#contact" class="btn">Get a Quote</a>
 </div>
 
 <!-- ABOUT -->
 <section>
   <h2>About Us</h2>
-  <p>
-    NTM Security Services is a trusted provider based in Fourways, Gauteng.
-    We deliver professional, reliable protection for people, property, and assets.
-  </p>
+  <p>Professional security services protecting commercial, industrial, retail, entertainment and institutional sectors across Gauteng.</p>
 </section>
 
 <!-- SERVICES -->
@@ -120,36 +143,34 @@ footer {
     <div class="card">Commercial Security</div>
     <div class="card">Industrial Security</div>
     <div class="card">Retail Security</div>
-    <div class="card">Entertainment & Events</div>
+    <div class="card">Events Security</div>
     <div class="card">Institutional Security</div>
   </div>
 </section>
 
-<!-- WHY US -->
-<section>
-  <h2>Why Choose Us</h2>
-  <p>✔ PSIRA Registered (4776743)</p>
-  <p>✔ 24/7 Protection</p>
-  <p>✔ Professional Guards</p>
-  <p>✔ Reliable & Affordable</p>
-</section>
+<!-- CONTACT FORM -->
+<section id="contact">
+  <h2>Request a Quote</h2>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <p><strong>Desmond:</strong> 073 826 3824</p>
-  <p><strong>Naome:</strong> 082 774 0600</p>
-  <p><strong>Email:</strong> ntmsecurity@outlook.co.za</p>
-  <p><strong>Address:</strong> Riversands Farm Village, Fourways, Gauteng</p>
-  <p><strong>Company Reg:</strong> 2024/294342/07</p>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <textarea name="message" placeholder="Describe your security needs..." required></textarea>
+    <button type="submit">Send Request</button>
+  </form>
+
+  <p>📞 Desmond: 073 826 3824</p>
+  <p>📞 Naome: 082 774 0600</p>
+  <p>📧 ntmsecurity@outlook.co.za</p>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 NTM Security Services</p>
+  <p>© 2026 NTM Security Services | PSIRA: 4776743</p>
 </footer>
 
-<!-- WHATSAPP BUTTON -->
+<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/27738263824" target="_blank">💬</a>
 
 </body>

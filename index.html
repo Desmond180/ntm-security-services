@@ -4,58 +4,153 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NTM Security Services</title>
+
 <style>
-body {font-family: Arial; margin:0; background:#0f172a; color:white;}
-header {background:#020617; padding:40px; text-align:center;}
-section {padding:40px;}
-h1,h2 {color:#38bdf8;}
-.btn {background:#38bdf8; padding:12px 25px; color:black; text-decoration:none; border-radius:5px;}
-.card {background:#1e293b; padding:20px; margin:10px; border-radius:10px;}
-footer {background:#020617; text-align:center; padding:20px;}
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#0b1220;
+  color:white;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+  url('https://images.unsplash.com/photo-1581093458791-9f3c3900df9b');
+  background-size: cover;
+  background-position: center;
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1 {
+  font-size:40px;
+  color:#00c2ff;
+}
+
+.hero p {
+  font-size:18px;
+  margin:20px 0;
+}
+
+.btn {
+  background:#00c2ff;
+  padding:12px 25px;
+  color:black;
+  text-decoration:none;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+/* SECTIONS */
+section {
+  padding:50px 20px;
+  text-align:center;
+}
+
+h2 {
+  color:#00c2ff;
+}
+
+/* SERVICES */
+.services {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card {
+  background:#1b2338;
+  margin:10px;
+  padding:20px;
+  border-radius:10px;
+  width:250px;
+}
+
+/* CONTACT */
+.contact p {
+  margin:5px;
+}
+
+/* FOOTER */
+footer {
+  background:#020617;
+  padding:20px;
+  text-align:center;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  font-size:20px;
+  text-decoration:none;
+}
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>NTM SECURITY SERVICES</h1>
-<p>Your Safety Comes First</p>
-<a href="#contact" class="btn">Get a Quote</a>
-</header>
+<!-- HERO -->
+<div class="hero">
+  <h1>NTM SECURITY SERVICES</h1>
+  <p>Your Safety Comes First</p>
+  <a href="#contact" class="btn">Get a Quote</a>
+</div>
 
+<!-- ABOUT -->
 <section>
-<h2>About Us</h2>
-<p>NTM Security Services provides professional and reliable security solutions across Gauteng. We protect people, property, and assets with trained personnel and trusted systems.</p>
+  <h2>About Us</h2>
+  <p>
+    NTM Security Services is a trusted provider based in Fourways, Gauteng.
+    We deliver professional, reliable protection for people, property, and assets.
+  </p>
 </section>
 
+<!-- SERVICES -->
 <section>
-<h2>Our Services</h2>
-<div class="card">Commercial Security</div>
-<div class="card">Industrial Security</div>
-<div class="card">Retail Security</div>
-<div class="card">Entertainment & Events</div>
-<div class="card">Institutional Security</div>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">Commercial Security</div>
+    <div class="card">Industrial Security</div>
+    <div class="card">Retail Security</div>
+    <div class="card">Entertainment & Events</div>
+    <div class="card">Institutional Security</div>
+  </div>
 </section>
 
+<!-- WHY US -->
 <section>
-<h2>Why Choose Us</h2>
-<p>✔ PSIRA Registered (4776743)</p>
-<p>✔ 24/7 Protection</p>
-<p>✔ Professional Guards</p>
-<p>✔ Reliable Service</p>
+  <h2>Why Choose Us</h2>
+  <p>✔ PSIRA Registered (4776743)</p>
+  <p>✔ 24/7 Protection</p>
+  <p>✔ Professional Guards</p>
+  <p>✔ Reliable & Affordable</p>
 </section>
 
-<section id="contact">
-<h2>Contact Us</h2>
-<p><strong>Desmond:</strong> 073 826 3824</p>
-<p><strong>Naome:</strong> 082 774 0600</p>
-<p><strong>Email:</strong> ntmsecurity@outlook.co.za</p>
-<p><strong>Address:</strong> Riversands Farm Village, Fourways, Gauteng</p>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Desmond:</strong> 073 826 3824</p>
+  <p><strong>Naome:</strong> 082 774 0600</p>
+  <p><strong>Email:</strong> ntmsecurity@outlook.co.za</p>
+  <p><strong>Address:</strong> Riversands Farm Village, Fourways, Gauteng</p>
+  <p><strong>Company Reg:</strong> 2024/294342/07</p>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<p>© 2026 NTM Security Services | Company Reg: 2024/294342/07</p>
+  <p>© 2026 NTM Security Services</p>
 </footer>
+
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/27738263824" target="_blank">💬</a>
 
 </body>
 </html>
